@@ -6,22 +6,22 @@ const fly: any = document.querySelector('#fly')
 
 // const position = fly.getBoundingClientRect();
 
-button1.addEventListener('click', function () {
+button1.addEventListener('mousedown', function () {
     const position = fly.getBoundingClientRect();
     fly.style.left = `${position.left - 80}px`;
 });
 
-button2.addEventListener('click', function () {
+button2.addEventListener('mousedown', function () {
     const position = fly.getBoundingClientRect();
     fly.style.top = `${position.top - 80}px`;
 });
 
-button3.addEventListener('click', function () {
+button3.addEventListener('mousedown', function () {
     const position = fly.getBoundingClientRect();
     fly.style.top = `${position.top + 80}px`;
 });
 
-button4.addEventListener('click', function () {
+button4.addEventListener('mousedown', function () {
     const position = fly.getBoundingClientRect();
     fly.style.left = `${position.left + 80}px`;
 });
@@ -29,7 +29,7 @@ button4.addEventListener('click', function () {
 function refreshPage(){
     window.location.reload();
 } 
-// function handClick(ev):void {
+// function handmousedown(ev):void {
 //     const fly =document.getElementById('fly')
 //     const id = ev.target.id;
 

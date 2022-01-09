@@ -4,26 +4,26 @@ var button3 = document.querySelector('#button3');
 var button4 = document.querySelector('#button4');
 var fly = document.querySelector('#fly');
 // const position = fly.getBoundingClientRect();
-button1.addEventListener('click', function () {
+button1.addEventListener('mousedown', function () {
     var position = fly.getBoundingClientRect();
     fly.style.left = position.left - 80 + "px";
 });
-button2.addEventListener('click', function () {
+button2.addEventListener('mousedown', function () {
     var position = fly.getBoundingClientRect();
     fly.style.top = position.top - 80 + "px";
 });
-button3.addEventListener('click', function () {
+button3.addEventListener('mousedown', function () {
     var position = fly.getBoundingClientRect();
     fly.style.top = position.top + 80 + "px";
 });
-button4.addEventListener('click', function () {
+button4.addEventListener('mousedown', function () {
     var position = fly.getBoundingClientRect();
     fly.style.left = position.left + 80 + "px";
 });
 function refreshPage() {
     window.location.reload();
 }
-// function handClick(ev):void {
+// function handmousedown(ev):void {
 //     const fly =document.getElementById('fly')
 //     const id = ev.target.id;
 // const position = fly.getBoundingRect();
